@@ -7,6 +7,7 @@ public class EnemyController : MonoBehaviour
 {
 
     public Transform player;
+    public GameObject whiteBoard;
 
     NavMeshAgent agent;
 
@@ -26,5 +27,13 @@ public class EnemyController : MonoBehaviour
     void Follow()
     {
         agent.SetDestination(player.transform.position);
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Action"))
+        {
+            whiteBoard.SetActive(true);
+        }
     }
 }
