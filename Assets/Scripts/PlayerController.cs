@@ -9,6 +9,7 @@ public class PlayerController : MonoBehaviour
 
     float horizontal;
     float vertical;
+    bool movility;
     Rigidbody rb;
     Vector3 movement; // Va a almacenar la dirección del movimiento
 
@@ -61,5 +62,10 @@ public class PlayerController : MonoBehaviour
     void DisableColliderAttack()
     {
         colliderAttack.SetActive(false);
+    }
+
+    public void SetMovility(bool newState)
+    {
+        movility = newState;
     }
 }

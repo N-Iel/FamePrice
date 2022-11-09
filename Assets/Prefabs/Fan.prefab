@@ -112,7 +112,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4a80026598d73646a5f5f9313d8a760, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 0}
+  player: {fileID: 5450151882097195821, guid: f0c03129c68471a4296a880e159bef3f, type: 3}
+  whiteBoard: {fileID: 6735790226393232858, guid: d927cb3ec6d450e488ee86fae5fdedbb, type: 3}
 --- !u!195 &4052741507684228663
 NavMeshAgent:
   m_ObjectHideFlags: 0

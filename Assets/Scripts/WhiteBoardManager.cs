@@ -6,15 +6,19 @@ public class WhiteBoardManager : MonoBehaviour
 {
 
     public MouseDraw pencilScript;
+    public PlayerController playerController;
+    public int signTime;
 
     void OnEnable()
     {
-        Invoke("SetDisabled", 3);
+        playerController.SetMovility(false);
+        Invoke("SetDisabled", signTime);
     }
 
     void SetDisabled()
     {
         pencilScript.ClearTexture();
+        playerController.SetMovility(true);
         gameObject.SetActive(false);
     }
 }
